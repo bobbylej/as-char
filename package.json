@@ -1,0 +1,17 @@
+{
+  "name": "as-char",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ping": "^0.2.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
