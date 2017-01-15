@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.40 scan initiated Sun Jan 15 15:45:48 2017 as: nmap -sn -oX output/hosts_3 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.77.96.0/19 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_3 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.77.96.0/19" start="1484491548" startstr="Sun Jan 15 15:45:48 2017" version="7.40" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.97.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="do-miko-rtru2.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="37688" rttvar="37688" to="188440"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.98.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="d.wpimg.pl" type="PTR"/>
+</hostnames>
+<times srtt="163983" rttvar="163983" to="819915"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.98.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="websocket.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="60115" rttvar="60115" to="300575"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.98.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="62397" rttvar="62397" to="311985"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ksiazki.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="154162" rttvar="154162" to="770810"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.18" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="81351" rttvar="81351" to="406755"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ads.businessclick.com" type="PTR"/>
+</hostnames>
+<times srtt="40556" rttvar="40556" to="202780"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="staticbc.com" type="PTR"/>
+</hostnames>
+<times srtt="32431" rttvar="32431" to="162155"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.22" addrtype="ipv4"/>
+<hostnames>
+<hostname name="img.businessclick.com" type="PTR"/>
+</hostnames>
+<times srtt="32729" rttvar="32729" to="163645"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="businessclick.com" type="PTR"/>
+</hostnames>
+<times srtt="24842" rttvar="24842" to="124210"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.99.24" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="25508" rttvar="25508" to="127540"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.25" addrtype="ipv4"/>
+<hostnames>
+<hostname name="testowy-lb.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="24890" rttvar="24890" to="124450"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.26" addrtype="ipv4"/>
+<hostnames>
+<hostname name="v.wpimg.pl" type="PTR"/>
+</hostnames>
+<times srtt="23703" rttvar="23703" to="118515"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.99.28" addrtype="ipv4"/>
+<hostnames>
+<hostname name="adx.businessclick.com" type="PTR"/>
+</hostnames>
+<times srtt="23215" rttvar="23215" to="116075"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="profil.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="66097" rttvar="66097" to="330485"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ulubiency.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="98601" rttvar="98601" to="493005"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gwiazdy.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="64904" rttvar="64904" to="324520"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.8" addrtype="ipv4"/>
+<hostnames>
+<hostname name="rozrywka.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="62712" rttvar="62712" to="313560"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sportowefakty.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="62354" rttvar="62354" to="311770"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.rozrywkaprzyszlosci.orange.pl" type="PTR"/>
+</hostnames>
+<times srtt="48202" rttvar="48202" to="241010"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="centralagier.pl" type="PTR"/>
+</hostnames>
+<times srtt="79808" rttvar="79808" to="399040"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="si.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="70716" rttvar="70716" to="353580"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.13" addrtype="ipv4"/>
+<hostnames>
+<hostname name="komiks.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="76733" rttvar="76733" to="383665"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="telefon.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="45188" rttvar="45188" to="225940"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.15" addrtype="ipv4"/>
+<hostnames>
+<hostname name="babyliss.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="50970" rttvar="50970" to="254850"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="horoskop.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="63343" rttvar="63343" to="316715"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.19" addrtype="ipv4"/>
+<hostnames>
+<hostname name="historia.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="68723" rttvar="68723" to="343615"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.100.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fragoria.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="32348" rttvar="32348" to="161740"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.22" addrtype="ipv4"/>
+<hostnames>
+<hostname name="odkrywcy.pl" type="PTR"/>
+</hostnames>
+<times srtt="32703" rttvar="32703" to="163515"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.100.25" addrtype="ipv4"/>
+<hostnames>
+<hostname name="p2p-1.jabber.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="24864" rttvar="24864" to="124320"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.100.26" addrtype="ipv4"/>
+<hostnames>
+<hostname name="p2p-2.jabber.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="23626" rttvar="23626" to="118130"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.28" addrtype="ipv4"/>
+<hostnames>
+<hostname name="api.docelu.pl" type="PTR"/>
+</hostnames>
+<times srtt="23151" rttvar="23151" to="115755"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.29" addrtype="ipv4"/>
+<hostnames>
+<hostname name="accor.hotele.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="25500" rttvar="25500" to="127500"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.100.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="18178" rttvar="18178" to="100000"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="smtp.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="73292" rttvar="73292" to="366460"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="smtp26.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="154042" rttvar="154042" to="770210"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mx1.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="163263" rttvar="163263" to="816315"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mx2.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="64856" rttvar="64856" to="324280"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.8" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mx2.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="62689" rttvar="62689" to="313445"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mx3.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="62332" rttvar="62332" to="311660"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mx3.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="48148" rttvar="48148" to="240740"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mx4.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="70657" rttvar="70657" to="353285"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.21" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="32288" rttvar="32288" to="161440"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.101.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="33290" rttvar="33290" to="166450"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.101.23" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="25368" rttvar="25368" to="126840"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.24" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26043" rttvar="26043" to="130215"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="24842" rttvar="24842" to="124210"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.101.26" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23597" rttvar="23597" to="117985"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.101.27" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="20289" rttvar="20289" to="101445"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.101.28" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23082" rttvar="23082" to="115410"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.102.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="skrin.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="180959" rttvar="180959" to="904795"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.103.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gunter.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="153980" rttvar="153980" to="769900"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.103.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="new.artus.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="211892" rttvar="211892" to="1000000"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.103.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="new.hevelius.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="163211" rttvar="163211" to="816055"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.103.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="test.1944.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="165038" rttvar="165038" to="825190"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="proxy.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="88117" rttvar="88117" to="440585"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="slodkikacik.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="63978" rttvar="63978" to="319890"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="spamhaus.external.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="85952" rttvar="85952" to="429760"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mixer-adm.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="85071" rttvar="85071" to="425355"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.13" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mixer.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="49525" rttvar="49525" to="247625"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="possi.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="66305" rttvar="66305" to="331525"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.15" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dynacrems.wp.pl" type="PTR"/>
+</hostnames>
+<times srtt="74287" rttvar="74287" to="371435"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="zdrowieifitness.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="81406" rttvar="81406" to="407030"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.104.19" addrtype="ipv4"/>
+<hostnames>
+<hostname name="discourse.hosting.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="82629" rttvar="82629" to="413145"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="211754" rttvar="211754" to="1000000"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="49875" rttvar="49875" to="249375"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="62597" rttvar="62597" to="312985"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="62245" rttvar="62245" to="311225"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="73946" rttvar="73946" to="369730"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.18" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="68710" rttvar="68710" to="343550"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.19" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="60516" rttvar="60516" to="302580"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.26" addrtype="ipv4"/>
+<hostnames>
+<hostname name="rtr-vpn-n.adm.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="23336" rttvar="23336" to="116680"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.27" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="21696" rttvar="21696" to="108480"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.105.28" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="15998" rttvar="15998" to="100000"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.106.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="27729" rttvar="27729" to="138645"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.106.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="80117" rttvar="80117" to="400585"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.106.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="105095" rttvar="105095" to="525475"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.106.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="153846" rttvar="153846" to="769230"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.106.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="164230" rttvar="164230" to="821150"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.106.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="71261" rttvar="71261" to="356305"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.107.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="80076" rttvar="80076" to="400380"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.107.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="105073" rttvar="105073" to="525365"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.107.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="164147" rttvar="164147" to="820735"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.77.107.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="74289" rttvar="74289" to="371445"/>
+</host>
+<runstats><finished time="1484491550" timestr="Sun Jan 15 15:45:50 2017" elapsed="2.19" summary="Nmap done at Sun Jan 15 15:45:50 2017; 8192 IP addresses (84 hosts up) scanned in 2.19 seconds" exit="success"/><hosts up="84" down="8108" total="8192"/>
+</runstats>
+</nmaprun>

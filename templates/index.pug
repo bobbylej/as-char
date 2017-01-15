@@ -1,0 +1,16 @@
+html
+  head
+    title
+      | AS-char
+    link(rel="stylesheet", type="text/css", href="style.css")
+
+  body
+    .header
+      h1
+        | Charakterystyka Systemów Autonomicznych
+    .form-container
+      h2
+        | Wpisz numer Systemu Autonomicznego
+      form#form(action="/result")
+        input(type="text", name="resource", placeholder="Numer AS")
+        button(type="submit")

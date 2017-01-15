@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.40 scan initiated Sun Jan 15 15:45:48 2017 as: nmap -sn -oX output/hosts_0 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.77.102.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_0 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.77.102.0/24" start="1484491548" startstr="Sun Jan 15 15:45:48 2017" version="7.40" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.77.102.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="skrin.wp-sa.pl" type="PTR"/>
+</hostnames>
+<times srtt="54245" rttvar="54245" to="271225"/>
+</host>
+<runstats><finished time="1484491549" timestr="Sun Jan 15 15:45:49 2017" elapsed="1.12" summary="Nmap done at Sun Jan 15 15:45:49 2017; 256 IP addresses (1 host up) scanned in 1.12 seconds" exit="success"/><hosts up="1" down="255" total="256"/>
+</runstats>
+</nmaprun>

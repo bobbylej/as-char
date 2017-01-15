@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.40 scan initiated Sat Jan 14 14:14:45 2017 as: nmap -sn -oX hosts -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 156.17.0.0/16 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX hosts -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 156.17.0.0/16" start="1484399685" startstr="Sat Jan 14 14:14:45 2017" version="7.40" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.32.15" addrtype="ipv4"/>
+<hostnames>
+<hostname name="x05.ie.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51503" rttvar="51503" to="257515"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="51328" rttvar="51328" to="256640"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="58936" rttvar="58936" to="294680"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="56602" rttvar="56602" to="283010"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="69215" rttvar="69215" to="346075"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="55893" rttvar="55893" to="279465"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="67606" rttvar="67606" to="338030"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="57104" rttvar="57104" to="285520"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="56100" rttvar="56100" to="280500"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64879" rttvar="64879" to="324395"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64410" rttvar="64410" to="322050"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.33.11" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="65809" rttvar="65809" to="329045"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.12" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="69349" rttvar="69349" to="346745"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.33.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="68997" rttvar="68997" to="344985"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.14" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="55291" rttvar="55291" to="276455"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.33.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="56841" rttvar="56841" to="284205"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.36.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="58802" rttvar="58802" to="294010"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.36.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="6-5.iko.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="67499" rttvar="67499" to="337495"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.36.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="57574" rttvar="57574" to="287870"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.38.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="al305.ita.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="78864" rttvar="78864" to="394320"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.40.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hip.ict.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="58712" rttvar="58712" to="293560"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.40.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hop.ict.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="56425" rttvar="56425" to="282125"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.41.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hip.ict.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="58690" rttvar="58690" to="293450"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.41.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="58631" rttvar="58631" to="293155"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.42.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hop.ict.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="56308" rttvar="56308" to="281540"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.42.8" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pik.ict.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="55740" rttvar="55740" to="278700"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.44.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hera.pwr.jgora.pl" type="PTR"/>
+</hostnames>
+<times srtt="64532" rttvar="64532" to="322660"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.44.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="router.pwr.jgora.pl" type="PTR"/>
+</hostnames>
+<times srtt="65948" rttvar="65948" to="329740"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.44.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="atena.pwr.jgora.pl" type="PTR"/>
+</hostnames>
+<times srtt="69530" rttvar="69530" to="347650"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.44.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="w2k.pwr.jgora.pl" type="PTR"/>
+</hostnames>
+<times srtt="56958" rttvar="56958" to="284790"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.45.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="2.kmeif.pwr.edu.pl" type="PTR"/>
+</hostnames>
+<times srtt="56196" rttvar="56196" to="280980"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.45.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="3.kmeif.pwr.edu.pl" type="PTR"/>
+</hostnames>
+<times srtt="55997" rttvar="55997" to="279985"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.45.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.kmeif.pwr.edu.pl" type="PTR"/>
+</hostnames>
+<times srtt="65915" rttvar="65915" to="329575"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.45.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="14.kmeif.pwr.edu.pl" type="PTR"/>
+</hostnames>
+<times srtt="51571" rttvar="51571" to="257855"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.46.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="55365" rttvar="55365" to="276825"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.46.14" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="51548" rttvar="51548" to="257740"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.52.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="xterm1.witi.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="61311" rttvar="61311" to="306555"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.52.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="xterm10.witi.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="68096" rttvar="68096" to="340480"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.52.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="61998" rttvar="61998" to="309990"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.52.33" addrtype="ipv4"/>
+<hostnames>
+<hostname name="lslip1.witi.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="65961" rttvar="65961" to="329805"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.53.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="poltegor.igo.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50735" rttvar="50735" to="253675"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.54.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="kampus-gw.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="59857" rttvar="59857" to="299285"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.54.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="kuria.archidiecezja.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="61262" rttvar="61262" to="306310"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.54.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="kat-4.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="58655" rttvar="58655" to="293275"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.54.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="srv-gw.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="55083" rttvar="55083" to="275415"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.54.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="piotr.archidiecezja.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="55032" rttvar="55032" to="275160"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.54.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="porta.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="49904" rttvar="49904" to="249520"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.54.13" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.fides.org.pl" type="PTR"/>
+</hostnames>
+<times srtt="67702" rttvar="67702" to="338510"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.54.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mak.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="57221" rttvar="57221" to="286105"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.54.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bib-gw.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="55152" rttvar="55152" to="275760"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.54.33" addrtype="ipv4"/>
+<hostnames>
+<hostname name="adm-gw.pwt.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="65900" rttvar="65900" to="329500"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dziekanat.wsiz.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="49875" rttvar="49875" to="249375"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cms.wsiz.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="68031" rttvar="68031" to="340155"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.13" addrtype="ipv4"/>
+<hostnames>
+<hostname name="e-learning.wsiz.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="67680" rttvar="67680" to="338400"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="xxx.wsiz.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="57190" rttvar="57190" to="285950"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.wsiz.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="77851" rttvar="77851" to="389255"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cisco.wsiz.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51629" rttvar="51629" to="258145"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="50103" rttvar="50103" to="250515"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.23" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64424" rttvar="64424" to="322120"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.24" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="52952" rttvar="52952" to="264760"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.55.31" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="67820" rttvar="67820" to="339100"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.58.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="exp1.bu.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="67962" rttvar="67962" to="339810"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.58.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dk.bu.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50028" rttvar="50028" to="250140"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.58.28" addrtype="ipv4"/>
+<hostnames>
+<hostname name="repozytorium.bu.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="57479" rttvar="57479" to="287395"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.59.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="astro1.astro.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="60386" rttvar="60386" to="301930"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.59.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="astro2.astro.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="54284" rttvar="54284" to="271420"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.61.32" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66139" rttvar="66139" to="330695"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.63.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bgbackup.awf.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="53212" rttvar="53212" to="266060"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.66.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="suplement.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="53111" rttvar="53111" to="265555"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.66.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="59898" rttvar="59898" to="299490"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.66.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="59444" rttvar="59444" to="297220"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.67.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fluid.itcmp.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="55521" rttvar="55521" to="277605"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.67.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gl-13.itcmp.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="59422" rttvar="59422" to="297110"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.68.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="blackhole.if.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="57924" rttvar="57924" to="289620"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.68.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="51688" rttvar="51688" to="258440"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.68.8" addrtype="ipv4"/>
+<hostnames>
+<hostname name="new.if.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="73397" rttvar="73397" to="366985"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.73.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ave.pwr.edu.pl" type="PTR"/>
+</hostnames>
+<times srtt="76444" rttvar="76444" to="382220"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.75.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64669" rttvar="64669" to="323345"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.75.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="56472" rttvar="56472" to="282360"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.76.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="i013-1.iios.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="64628" rttvar="64628" to="323140"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.76.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="i019.iios.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="56416" rttvar="56416" to="282080"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.78.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nafta1.nw.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51865" rttvar="51865" to="259325"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.78.13" addrtype="ipv4"/>
+<hostnames>
+<hostname name="naf206.nw.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="72930" rttvar="72930" to="364650"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.79.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="51840" rttvar="51840" to="259200"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.79.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="proxy.bg.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="60315" rttvar="60315" to="301575"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.79.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="smtp.bg.pwr.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="59231" rttvar="59231" to="296155"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.79.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64495" rttvar="64495" to="322475"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.80.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="p225-1.ok.ae.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="53461" rttvar="53461" to="267305"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.80.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="alpha.ok.ae.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="92341" rttvar="92341" to="461705"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.83.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="58796" rttvar="58796" to="293980"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.83.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="adasw2.ar.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="64091" rttvar="64091" to="320455"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.85.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hermes.int.pan.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="65344" rttvar="65344" to="326720"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.85.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="vote.int.pan.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="63981" rttvar="63981" to="319905"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.85.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="136230" rttvar="136230" to="681150"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.85.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="oc.int.pan.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="92029" rttvar="92029" to="460145"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.85.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="poczta.int.pan.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="91311" rttvar="91311" to="456555"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.86.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.math.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="65219" rttvar="65219" to="326095"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.86.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fricas.math.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="63860" rttvar="63860" to="319300"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.86.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sweb.math.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="84030" rttvar="84030" to="420150"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.86.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ankieta.math.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="91991" rttvar="91991" to="459955"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.86.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="magweb.math.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="91277" rttvar="91277" to="456385"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.86.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="agatka.math.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="56516" rttvar="56516" to="282580"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.87.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="r-born-uni-g12.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="54116" rttvar="54116" to="270580"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.87.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="r-leopold-uni-g12.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51355" rttvar="51355" to="256775"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.89.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="culex.biol.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="194463" rttvar="194463" to="972315"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.90.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="surfer.iitd.pan.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="48797" rttvar="48797" to="243985"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.90.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="webmail.iitd.pan.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="63572" rttvar="63572" to="317860"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.91.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nomad.ifd.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="194019" rttvar="194019" to="970095"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.91.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="proxy.ifd.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="91120" rttvar="91120" to="455600"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.93.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Biosfera.biol.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="193920" rttvar="193920" to="969600"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.93.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Ekolog.biol.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="63331" rttvar="63331" to="316655"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.94.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="193764" rttvar="193764" to="968820"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.100.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="genus.am.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="57058" rttvar="57058" to="285290"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.100.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="umed.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="75164" rttvar="75164" to="375820"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.100.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="virtual.osk.am.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="63320" rttvar="63320" to="316600"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.100.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="odra.am.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="68588" rttvar="68588" to="342940"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.100.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="virtual2.am.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="54121" rttvar="54121" to="270605"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.100.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="virt.am.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="80504" rttvar="80504" to="402520"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.100.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gw-osk.osk.am.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="83409" rttvar="83409" to="417045"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.101.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cheksp.umed.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="57001" rttvar="57001" to="285005"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.103.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="octopus.chem.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="53289" rttvar="53289" to="266445"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.103.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ss5.chem.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="53339" rttvar="53339" to="266695"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.103.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="neutron.chem.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="68510" rttvar="68510" to="342550"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.106.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cybis.asp.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="65315" rttvar="65315" to="326575"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.106.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="smtp-gw0.asp.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50727" rttvar="50727" to="253635"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.106.18" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="105983" rttvar="105983" to="529915"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.108.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="energy4a.iase.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50625" rttvar="50625" to="253125"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.110.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="68163" rttvar="68163" to="340815"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.114.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="91915" rttvar="91915" to="459575"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.114.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="54567" rttvar="54567" to="272835"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.116.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="52863" rttvar="52863" to="264315"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.116.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="56841" rttvar="56841" to="284205"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.122.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="iswn.prawo.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50569" rttvar="50569" to="252845"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.123.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="router.ibi.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51418" rttvar="51418" to="257090"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.123.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.ibi.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51459" rttvar="51459" to="257295"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.125.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="k2.dziennikarstwo.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="51344" rttvar="51344" to="256720"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="156.17.125.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="k5.dziennikarstwo.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50394" rttvar="50394" to="251970"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.126.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="k-1.sezam.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="59394" rttvar="59394" to="296970"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="156.17.161.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="k161-3.PARAWANOWIEC.ds.uni.wroc.pl" type="PTR"/>
+</hostnames>
+<times srtt="50374" rttvar="50374" to="251870"/>
+</host>
+<runstats><finished time="1484399714" timestr="Sat Jan 14 14:15:14 2017" elapsed="29.38" summary="Nmap done at Sat Jan 14 14:15:14 2017; 65536 IP addresses (139 hosts up) scanned in 29.38 seconds" exit="success"/><hosts up="139" down="65397" total="65536"/>
+</runstats>
+</nmaprun>

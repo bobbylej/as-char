@@ -1,0 +1,107 @@
+html
+  head
+    title
+      | AS-char
+    link(rel="stylesheet", type="text/css", href="style.css")
+
+  body
+    .header
+      h1
+        | Charakterystyka Systemów Autonomicznych
+
+    .map-container
+      #map
+
+    .result
+      h2 Wynik analizy:
+
+      h3 Zasób:
+        span= AS.resource
+
+      if AS.stats.avg
+        .stats Statystyki:
+          ul
+            li= AS.stats.avg
+              |  ms
+            li= AS.stats.stddev
+              |  ms
+            li= AS.stats.med
+              |  ms
+
+      //- .locations Lokalizacje:
+      //-   ul
+      //-     each location in locations
+      //-       li= location.lat + ", " + location.lng
+
+      .prefixes Sieci:
+        ul
+          each prefix in prefixes
+            li= prefix.prefix
+              if prefix.stats.avg
+                .stats Statystyki:
+                  ul
+                    li= prefix.stats.avg
+                      |  ms
+                    li= prefix.stats.stddev
+                      |  ms
+                    li= prefix.stats.med
+                      |  ms
+
+              .hosts Hosty:
+                ul
+                  each host in prefix.hosts
+                    li= host.host
+                      if host.stats.avg
+                        .stats Statystyki:
+                          ul
+                            li= host.stats.avg
+                              |  ms
+                            li= host.stats.stddev
+                              |  ms
+                            li= host.stats.med
+                              |  ms
+
+                      //- .locations Lokalizacje:
+                      //-   ul
+                      //-     each location in host.locations
+                      //-       li= location.lat + ", " + location.lng
+
+script
+  | var AS = {
+  |   resource: '!{AS.resource}',
+  |   locations: new Array()
+  | };
+  each location in locations
+    | AS.locations.push({
+    |   lat: !{location.lat},
+    |   lng: !{location.lng}
+    | });
+
+  | var prefixes = new Array();
+  | let prefix = {};
+  | let host = {};
+
+  each prefix in prefixes
+    | prefix = {
+    |   prefix: '!{prefix.prefix}',
+    |   hosts: new Array()
+    | };
+
+    each host in prefix.hosts
+      | host = {
+      |   host: '!{host.host}',
+      |   locations: new Array()
+      | };
+
+      each location in host.locations
+        | host.locations.push({
+        |   lat: !{location.lat},
+        |   lng: !{location.lng}
+        | });
+
+      | prefix.hosts.push(host);
+
+    | prefixes.push(prefix);
+
+script(src="/result.js")
+script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0hSN1QhrjZ4Qzdu1YH3E_RvBINVCrt_A&callback=initMap", async, defer)
