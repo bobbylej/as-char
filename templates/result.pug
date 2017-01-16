@@ -5,66 +5,76 @@ html
     link(rel="stylesheet", type="text/css", href="style.css")
 
   body
-    .header
-      h1
-        | Charakterystyka Systemów Autonomicznych
-
     .map-container
       #map
 
     .result
-      h2 Wynik analizy:
+      h1 Wynik analizy:
 
-      h3 Zasób:
+      h2 Zasób:&nbsp;
         span= AS.resource
 
-      if AS.stats.avg
-        .stats Statystyki:
-          ul
-            li= AS.stats.avg
-              |  ms
-            li= AS.stats.stddev
-              |  ms
-            li= AS.stats.med
-              |  ms
+      .box
+        if AS.stats.avg
+          table.stats Statystyki:
+            tr
+              td Średnia:
+              td= AS.stats.avg
+                |  ms
+            tr
+              td Odchylenie standardowe:
+              td= AS.stats.stddev
+                |  ms
+            tr
+              td Mediana:
+              td= AS.stats.med
+                |  ms
 
       //- .locations Lokalizacje:
       //-   ul
       //-     each location in locations
       //-       li= location.lat + ", " + location.lng
 
-      .prefixes Sieci:
-        ul
-          each prefix in prefixes
-            li= prefix.prefix
+      .prefixes
+        h4.box Sieci:
+        each prefix in prefixes
+          .prefix
+            h3= prefix.prefix
+            .box
               if prefix.stats.avg
-                .stats Statystyki:
-                  ul
-                    li= prefix.stats.avg
+                table.stats Statystyki:
+                  tr
+                    td Średnia:
+                    td= prefix.stats.avg
                       |  ms
-                    li= prefix.stats.stddev
+                  tr
+                    td Odchylenie standardowe:
+                    td= prefix.stats.stddev
                       |  ms
-                    li= prefix.stats.med
+                  tr
+                    td Mediana:
+                    td= prefix.stats.med
                       |  ms
 
-              .hosts Hosty:
-                ul
-                  each host in prefix.hosts
-                    li= host.host
-                      if host.stats.avg
-                        .stats Statystyki:
-                          ul
-                            li= host.stats.avg
-                              |  ms
-                            li= host.stats.stddev
-                              |  ms
-                            li= host.stats.med
-                              |  ms
-
-                      //- .locations Lokalizacje:
-                      //-   ul
-                      //-     each location in host.locations
-                      //-       li= location.lat + ", " + location.lng
+              .hosts
+                h4 Hosty:
+                each host in prefix.hosts
+                  .host
+                    h5= host.host
+                    if host.stats.avg
+                      table.stats Statystyki:
+                        tr
+                          td Średnia:
+                          td= host.stats.avg
+                            |  ms
+                        tr
+                          td Odchylenie standardowe:
+                          td= host.stats.stddev
+                            |  ms
+                        tr
+                          td Mediana:
+                          td= host.stats.med
+                            |  ms
 
 script
   | var AS = {

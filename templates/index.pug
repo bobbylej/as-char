@@ -5,12 +5,17 @@ html
     link(rel="stylesheet", type="text/css", href="style.css")
 
   body
-    .header
-      h1
-        | Charakterystyka Systemów Autonomicznych
     .form-container
-      h2
-        | Wpisz numer Systemu Autonomicznego
-      form#form(action="/result")
-        input(type="text", name="resource", placeholder="Numer AS")
-        button(type="submit")
+      h1
+        | Wpisz numer Systemu Autonomicznego, adres sieci lub adres IP
+      form#form()
+        .box.form-group
+          input(type="text", name="resource", placeholder="Numer AS")
+        .form-group
+          input.button(type="submit", value="Badaj zasób")
+
+    .loader#loader
+      .loader-title Czekaj. Trwa ładowanie danych.
+      .loader-element
+
+script(src="/index.js")

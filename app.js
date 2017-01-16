@@ -13,11 +13,13 @@ const exec = require('child_process').exec;
 const maxPrefixes = 4;
 const maxHosts = 10;
 const maxPing = 10;
+const pingTime = 1500;
 
 app.set('views', './templates')
 app.set('view engine', 'pug');
 app.use(express.static('scripts'));
 app.use(express.static('styles'));
+app.use(express.static('images'));
 
 nmap.nodenmap.nmapLocation = "nmap";
 
@@ -25,8 +27,13 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/resultMock', function (req, res) {
+  sendResultMock(res);
+});
+
 app.get('/result', function (req, res) {
   let resource = req.query.resource;
+  console.log('Result for ' + resource);
   getResourceInfo(resource, data => {
     let AS = {
       resource: resource,
@@ -48,6 +55,7 @@ app.get('/result', function (req, res) {
     if (prefixes.length > maxPrefixes) {
       prefixes = getRandomElements(prefixes, maxPrefixes);
     }
+    console.log('Networks: ', prefixes);
 
     getHostsFromPrefixes(prefixes, prefixesHosts => {
       prefixes = prefixesHosts;
@@ -61,6 +69,7 @@ app.get('/result', function (req, res) {
           }
           prefix.hosts.forEach(host => {
             analyzeHost(prefix.prefix, host, result => {
+              console.log('Complete analyze of ' + result.host);
               hosts.push(result);
               hostsSize--;
               if (hostsSize <= 0) {
@@ -137,7 +146,6 @@ function analyzeHost(prefix, host, callback) {
         lat: location.latitude
       });
     });
-    host = result;
     stack--;
     if (stack <= 0) {
       callback(result);
@@ -145,21 +153,21 @@ function analyzeHost(prefix, host, callback) {
   });
   let stackPing = maxPing;
   for (let i = 0; i < maxPing; i++) {
-    ping.promise.probe(host).then((res) => {
-      console.log(res.host, res.alive, res.time);
-      if (res.time) {
-        result.times.push(res.time);
-      }
-      stackPing--;
-      if (stackPing <= 0) {
-        console.log('pingstop', stack);
-        stack--;
-        if (stack <= 0) {
-          console.log('stack');
-          callback(result);
+    setTimeout( () => {
+      console.log('ping', host)
+      ping.promise.probe(host).then((res) => {
+        if (res.time) {
+          result.times.push(res.time);
         }
-      }
-    });
+        stackPing--;
+        if (stackPing <= 0) {
+          stack--;
+          if (stack <= 0) {
+            callback(result);
+          }
+        }
+      });
+    }, pingTime * i);
   }
 }
 
@@ -178,7 +186,6 @@ function countASStats(prefixes) {
     stats.stddev = standardDeviation(values);
     stats.med = median(values);
   }
-  console.log(values.length, stats)
   return stats;
 }
 
@@ -212,7 +219,7 @@ function countHostStats(host) {
 function average(values) {
   let sum = values.reduce((previous, current) => current += previous);
   let avg = sum / values.length;
-  return avg;
+  return round2Decimal(avg);
 }
 
 function standardDeviation(values){
@@ -221,7 +228,7 @@ function standardDeviation(values){
   let squareDiffs = values.map(function(value){
     let diff = value - avg;
     let sqrDiff = diff * diff;
-    return sqrDiff;
+    return round2Decimal(sqrDiff);
   });
 
   let avgSquareDiff = average(squareDiffs);
@@ -235,7 +242,7 @@ function median(values) {
   let lowMiddle = Math.floor((values.length - 1) / 2);
   let highMiddle = Math.ceil((values.length - 1) / 2);
   let median = (values[lowMiddle] + values[highMiddle]) / 2;
-  return median;
+  return round2Decimal(median);
 }
 
 function getHostsByPrefix(hosts, prefix) {
@@ -290,10 +297,145 @@ function prepereResult(AS, prefixes, hosts) {
     prefix.stats = countPrefixStats(prefix);
   });
   AS.stats = countASStats(prefixes);
-  console.log(AS)
 }
 
 function sendResult(res, AS, prefixes, locations) {
+  console.log('Send result for ' + AS.resource);
+  res.render(
+    'result',
+    {
+      AS: AS,
+      prefixes: prefixes,
+      locations: locations,
+    }
+  );
+}
+
+function sendResultMock(res) {
+  var AS = {
+    resource: '1291',
+    stats: {
+      avg: 10,
+      stddev: 1,
+      med: 11
+    }
+  }
+
+
+  var locations = [
+    {
+      lat: 52,
+      lng: 20
+    }
+  ]
+
+  var prefixes = [
+    {
+      prefix: '1111',
+      stats: {
+        avg: 10,
+        stddev: 1,
+        med: 11
+      },
+      hosts: [
+        {
+          host: '11112222',
+          stats: {
+            avg: 10,
+            stddev: 1,
+            med: 11
+          },
+          locations: [
+            {
+              lat: 51.092,
+              lng: 20.02
+            }
+          ]
+        },
+        {
+          host: '11113333',
+          stats: {
+            avg: 10,
+            stddev: 1,
+            med: 11
+          },
+          locations: [
+            {
+              lat: 52,
+              lng: 20
+            }
+          ]
+        },
+        {
+          host: '11114444',
+          stats: {
+            avg: 10,
+            stddev: 1,
+            med: 11
+          },
+          locations: [
+            {
+              lat: 52,
+              lng: 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      prefix: '2222',
+      stats: {
+        avg: 10,
+        stddev: 1,
+        med: 11
+      },
+      hosts: [
+        {
+          host: '22222222',
+          stats: {
+            avg: 10,
+            stddev: 1,
+            med: 11
+          },
+          locations: [
+            {
+              lat: 51.092,
+              lng: 20.02
+            }
+          ]
+        },
+        {
+          host: '22223333',
+          stats: {
+            avg: 10,
+            stddev: 1,
+            med: 11
+          },
+          locations: [
+            {
+              lat: 52,
+              lng: 20
+            }
+          ]
+        },
+        {
+          host: '22224444',
+          stats: {
+            avg: 10,
+            stddev: 1,
+            med: 11
+          },
+          locations: [
+            {
+              lat: 52,
+              lng: 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
   res.render(
     'result',
     {
@@ -307,6 +449,10 @@ function sendResult(res, AS, prefixes, locations) {
 function executeCommand(command, callback){
     exec(command, function(error, stdout, stderr){ callback(stdout); });
 };
+
+function round2Decimal(num) {
+  return Math.round(num * 100) / 100;
+}
 
 app.listen(3456, function () {
   console.log('Example app listening on port 3456!')

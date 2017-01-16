@@ -1,11 +1,16 @@
 console.log(AS);
 console.log(prefixes);
+
 var map;
+var markers = [];
+var markerYou;
 function initMap() {
-  var markers = [];//some array
   var bounds = new google.maps.LatLngBounds();
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: AS.locations[0].lat, lng: AS.locations[0].lng},
+    center: {
+      lat: AS.locations[0].lat,
+      lng: AS.locations[0].lng
+    },
     zoom: 8,
     scrollwheel: false
   });
@@ -26,39 +31,39 @@ function initMap() {
     let prefix = prefixes[p];
     for(let h = 0; h < prefix.hosts.length; h++) {
       let host = prefix.hosts[h];
-      host.locations.forEach(location => {
-        if (location.lat != AS.locations[0].lat && location.lng != AS.locations[0].lng) {
-          markers.push(new google.maps.Marker({
-            position: {
-              lat: location.lat,
-              lng: location.lng
-            },
-            label: `P${p}H${h}`,
-            map: map,
-            title: host.host
-          }));
-        }
-      })
+      addMarker(host, p);
     }
   }
 
-  fitBounds();
+  let markersCoordinates = new Array();
+  markers.forEach(marker => {
+    markersCoordinates.push({
+      lat: marker.getPosition().lat(),
+      lng: marker.getPosition().lng()
+    });
+  })
+  let path = new google.maps.Polyline({
+    path: markersCoordinates,
+    geodesic: true,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
 
-  var infoWindow = new google.maps.InfoWindow({map: map});
+  path.setMap(map);
 
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-      markers.push(new google.maps.Marker({
+      markerYou = new google.maps.Marker({
         position: {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         },
         map: map,
-        label: 'Ja',
+        label: 'Ty',
         title: 'Twoja pozycja'
-      }));
-
+      });
       fitBounds();
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
@@ -68,12 +73,57 @@ function initMap() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
 
+  fitBounds();
+
   function fitBounds() {
+    bounds.extend(markerYou.getPosition());
     for (let i = 0; i < markers.length; i++) {
       bounds.extend(markers[i].getPosition());
     }
     map.fitBounds(bounds);
   }
+}
+
+function addMarker(host, prefixIndex) {
+  for (let l = 0; l < host.locations.length; l++) {
+    let location = host.locations[l];
+    let wasAdded = false;
+    for (let i = 0; i < markers.length; i++) {
+      if (isSamePosition(markers[i].getPosition(), location)) {
+        wasAdded = true;
+        markers[i].setTitle(markers[i].getTitle() + ', ' + host.host);
+        let label = markers[i].getLabel();
+        if (label.indexOf(prefixIndex) == -1) {
+          if (label.indexOf('AS') != -1) {
+            label = label + `, ${prefixIndex}`;
+          } else {
+            label = label.replace(')', `, ${prefixIndex})`);
+          }
+          markers[i].setLabel(label);
+        }
+      }
+    }
+    if (!wasAdded) {
+      markers.push(new google.maps.Marker({
+        position: {
+          lat: location.lat,
+          lng: location.lng
+        },
+        label: `IP(${prefixIndex})`,
+        map: map,
+        title: host.host
+      }));
+    }
+  }
+}
+
+function isSamePosition(googleLoc, loc) {
+  return round2Decimal(googleLoc.lat()) == round2Decimal(loc.lat)
+          && round2Decimal(googleLoc.lng()) == round2Decimal(loc.lng);
+}
+
+function round2Decimal(num) {
+  return Math.round(num * 100) / 100;
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
