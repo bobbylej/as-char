@@ -1,38 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.40 scan initiated Sun Jan 15 15:18:48 2017 as: nmap -sn -oX output/hosts_5 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.77.102.0/24 -->
-<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_5 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.77.102.0/24" start="1484489928" startstr="Sun Jan 15 15:18:48 2017" version="7.40" xmloutputversion="1.04">
+<!-- Nmap 7.40 scan initiated Thu Jan 26 22:15:38 2017 as: nmap -sn -oX output/hosts_5 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 213.240.0.0/18 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_5 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 213.240.0.0/18" start="1485465338" startstr="Thu Jan 26 22:15:38 2017" version="7.40" xmloutputversion="1.04">
 <verbose level="0"/>
 <debugging level="0"/>
-<host><status state="up" reason="syn-ack" reason_ttl="0"/>
-<address addr="212.77.102.6" addrtype="ipv4"/>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.25.0" addrtype="ipv4"/>
 <hostnames>
-<hostname name="skrin.wp-sa.pl" type="PTR"/>
 </hostnames>
-<times srtt="38142" rttvar="38142" to="190710"/>
+<times srtt="94842" rttvar="94842" to="474210"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.25.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="b5-gi-0-1-0-2-600618.eunet.rs" type="PTR"/>
+</hostnames>
+<times srtt="99140" rttvar="99140" to="495700"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.25.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="105267" rttvar="105267" to="526335"/>
 </host>
 <host><status state="up" reason="syn-ack" reason_ttl="0"/>
-<address addr="212.77.102.71" addrtype="ipv4"/>
+<address addr="213.240.32.7" addrtype="ipv4"/>
 <hostnames>
-<hostname name="mailing.reklama.wp.pl" type="PTR"/>
+<hostname name="webmail.rts.rs" type="PTR"/>
 </hostnames>
-<times srtt="84138" rttvar="84138" to="420690"/>
+<times srtt="93314" rttvar="93314" to="466570"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.40.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="novisad2-gi0-2-301.eunet.rs" type="PTR"/>
+</hostnames>
+<times srtt="115721" rttvar="115721" to="578605"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.40.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="novisad2-gi0-2-302.eunet.rs" type="PTR"/>
+</hostnames>
+<times srtt="91346" rttvar="91346" to="456730"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.44.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="l3-bg-13-v2000.eunet.rs" type="PTR"/>
+</hostnames>
+<times srtt="95796" rttvar="95796" to="478980"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.55.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ns1.datastation.com" type="PTR"/>
+</hostnames>
+<times srtt="111033" rttvar="111033" to="555165"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.55.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ns2.datastation.com" type="PTR"/>
+</hostnames>
+<times srtt="109446" rttvar="109446" to="547230"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.55.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="srv3.datastation.com" type="PTR"/>
+</hostnames>
+<times srtt="108152" rttvar="108152" to="540760"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.55.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="srv4.datastation.com" type="PTR"/>
+</hostnames>
+<times srtt="115974" rttvar="115974" to="579870"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="213.240.55.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="srv5.datastation.com" type="PTR"/>
+</hostnames>
+<times srtt="115759" rttvar="115759" to="578795"/>
 </host>
 <host><status state="up" reason="syn-ack" reason_ttl="0"/>
-<address addr="212.77.102.113" addrtype="ipv4"/>
+<address addr="213.240.61.6" addrtype="ipv4"/>
 <hostnames>
-<hostname name="wymianadanych.wp.pl" type="PTR"/>
+<hostname name="mail.simpo.rs" type="PTR"/>
 </hostnames>
-<times srtt="65264" rttvar="65264" to="326320"/>
+<times srtt="115315" rttvar="115315" to="576575"/>
 </host>
 <host><status state="up" reason="syn-ack" reason_ttl="0"/>
-<address addr="212.77.102.144" addrtype="ipv4"/>
+<address addr="213.240.61.7" addrtype="ipv4"/>
 <hostnames>
-<hostname name="magiaolejkowsoraya.wp.pl" type="PTR"/>
+<hostname name="mail.torlak.rs" type="PTR"/>
 </hostnames>
-<times srtt="34500" rttvar="34500" to="172500"/>
+<times srtt="114585" rttvar="114585" to="572925"/>
 </host>
-<runstats><finished time="1484489929" timestr="Sun Jan 15 15:18:49 2017" elapsed="1.10" summary="Nmap done at Sun Jan 15 15:18:49 2017; 256 IP addresses (4 hosts up) scanned in 1.10 seconds" exit="success"/><hosts up="4" down="252" total="256"/>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="213.240.63.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="kondor.terminpool.ch" type="PTR"/>
+</hostnames>
+<times srtt="106312" rttvar="106312" to="531560"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="213.240.63.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="114107" rttvar="114107" to="570535"/>
+</host>
+<runstats><finished time="1485465343" timestr="Thu Jan 26 22:15:43 2017" elapsed="5.10" summary="Nmap done at Thu Jan 26 22:15:43 2017; 16384 IP addresses (16 hosts up) scanned in 5.10 seconds" exit="success"/><hosts up="16" down="16368" total="16384"/>
 </runstats>
 </nmaprun>

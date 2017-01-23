@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.40 scan initiated Sun Jan 15 14:56:11 2017 as: nmap -sn -oX output/hosts_7 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 147.248.90.0/24 -->
-<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_7 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 147.248.90.0/24" start="1484488571" startstr="Sun Jan 15 14:56:11 2017" version="7.40" xmloutputversion="1.04">
+<!-- Nmap 7.40 scan initiated Thu Jan 26 20:55:34 2017 as: nmap -sn -oX output/hosts_7 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.191.239.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_7 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.191.239.0/24" start="1485460534" startstr="Thu Jan 26 20:55:34 2017" version="7.40" xmloutputversion="1.04">
 <verbose level="0"/>
 <debugging level="0"/>
-<runstats><finished time="1484488572" timestr="Sun Jan 15 14:56:12 2017" elapsed="1.04" summary="Nmap done at Sun Jan 15 14:56:12 2017; 256 IP addresses (0 hosts up) scanned in 1.04 seconds" exit="success"/><hosts up="0" down="256" total="256"/>
+<runstats><finished time="1485460535" timestr="Thu Jan 26 20:55:35 2017" elapsed="1.02" summary="Nmap done at Thu Jan 26 20:55:35 2017; 256 IP addresses (0 hosts up) scanned in 1.02 seconds" exit="success"/><hosts up="0" down="256" total="256"/>
 </runstats>
 </nmaprun>

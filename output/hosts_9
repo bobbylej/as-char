@@ -1,10 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.40 scan initiated Sun Jan 15 14:56:11 2017 as: nmap -sn -oX output/hosts_9 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 192.73.28.0/24 -->
-<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_9 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 192.73.28.0/24" start="1484488571" startstr="Sun Jan 15 14:56:11 2017" version="7.40" xmloutputversion="1.04">
+<!-- Nmap 7.40 scan initiated Thu Jan 26 20:55:34 2017 as: nmap -sn -oX output/hosts_9 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.191.241.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_9 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 212.191.241.0/24" start="1485460534" startstr="Thu Jan 26 20:55:34 2017" version="7.40" xmloutputversion="1.04">
 <verbose level="0"/>
 <debugging level="0"/>
-<runstats><finished time="1484488572" timestr="Sun Jan 15 14:56:12 2017" elapsed="1.04" summary="Nmap done at Sun Jan 15 14:56:12 2017; 256 IP addresses (0 hosts up) scanned in 1.04 seconds" exit="success"/><hosts up="0" down="256" total="256"/>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.191.241.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="65555" rttvar="65555" to="327775"/>
+</host>
+<host><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="212.191.241.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="65451" rttvar="65451" to="327255"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.4" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-004.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="66016" rttvar="66016" to="330080"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.5" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-005.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="65979" rttvar="65979" to="329895"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-006.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="65916" rttvar="65916" to="329580"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-007.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="66096" rttvar="66096" to="330480"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.8" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-008.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="66034" rttvar="66034" to="330170"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-009.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="65985" rttvar="65985" to="329925"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-010.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="65599" rttvar="65599" to="327995"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-011.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="70436" rttvar="70436" to="352180"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-012.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="70374" rttvar="70374" to="351870"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.13" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-013.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="61019" rttvar="61019" to="305095"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-014.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="61493" rttvar="61493" to="307465"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.15" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-015.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="60722" rttvar="60722" to="303610"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-016.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="62156" rttvar="62156" to="310780"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-017.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="59998" rttvar="59998" to="299990"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.18" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-018.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="61865" rttvar="61865" to="309325"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.19" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-019.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="61523" rttvar="61523" to="307615"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-020.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="61470" rttvar="61470" to="307350"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-021.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="61425" rttvar="61425" to="307125"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.22" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-022.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="60916" rttvar="60916" to="304580"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="a212-191-241-023.deploy.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<times srtt="60857" rttvar="60857" to="304285"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.24" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="60565" rttvar="60565" to="302825"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.25" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="60479" rttvar="60479" to="302395"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.26" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="60422" rttvar="60422" to="302110"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="212.191.241.27" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="61383" rttvar="61383" to="306915"/>
+</host>
+<runstats><finished time="1485460536" timestr="Thu Jan 26 20:55:36 2017" elapsed="1.48" summary="Nmap done at Thu Jan 26 20:55:36 2017; 256 IP addresses (26 hosts up) scanned in 1.48 seconds" exit="success"/><hosts up="26" down="230" total="256"/>
 </runstats>
 </nmaprun>

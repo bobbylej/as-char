@@ -41,7 +41,13 @@ function initMap() {
       lat: marker.getPosition().lat(),
       lng: marker.getPosition().lng()
     });
-  })
+  });
+  if(markers.length > 2) {
+    markersCoordinates.push({
+      lat: markers[0].getPosition().lat(),
+      lng: markers[markers.length-1].getPosition().lng()
+    });
+  }
   let path = new google.maps.Polyline({
     path: markersCoordinates,
     geodesic: true,
@@ -65,6 +71,7 @@ function initMap() {
         title: 'Twoja pozycja'
       });
       fitBounds();
+      countDistances();
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
@@ -76,7 +83,9 @@ function initMap() {
   fitBounds();
 
   function fitBounds() {
-    bounds.extend(markerYou.getPosition());
+    if (markerYou) {
+      bounds.extend(markerYou.getPosition());
+    }
     for (let i = 0; i < markers.length; i++) {
       bounds.extend(markers[i].getPosition());
     }
@@ -117,6 +126,28 @@ function addMarker(host, prefixIndex) {
   }
 }
 
+function countDistances() {
+  let yourPos = {
+    lat: markerYou.getPosition().lat(),
+    lng: markerYou.getPosition().lng()
+  };
+  markers.forEach(marker => {
+    let markerPos = {
+      lat: marker.getPosition().lat(),
+      lng: marker.getPosition().lng()
+    };
+    let distance = getDistance(yourPos, markerPos);
+    writeDistance(marker, distance);
+  });
+}
+
+function writeDistance(marker, distance) {
+  let ids = marker.getTitle().split(', ');
+  ids.forEach(id => {
+    document.getElementById(id).innerHTML = round2Decimal(distance) + ' km';
+  })
+}
+
 function isSamePosition(googleLoc, loc) {
   return round2Decimal(googleLoc.lat()) == round2Decimal(loc.lat)
           && round2Decimal(googleLoc.lng()) == round2Decimal(loc.lng);
@@ -124,6 +155,24 @@ function isSamePosition(googleLoc, loc) {
 
 function round2Decimal(num) {
   return Math.round(num * 100) / 100;
+}
+
+function getDistance(pos1, pos2) {
+  var R = 6371; // Radius of the earth in km
+  var dLat = deg2rad(pos2.lat-pos1.lat);  // deg2rad below
+  var dLon = deg2rad(pos2.lng-pos1.lng);
+  var a =
+    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(deg2rad(pos1.lat)) * Math.cos(deg2rad(pos2.lat)) *
+    Math.sin(dLon/2) * Math.sin(dLon/2)
+    ;
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  var d = R * c; // Distance in km
+  return d;
+}
+
+function deg2rad(deg) {
+  return deg * (Math.PI/180)
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {

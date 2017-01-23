@@ -29,11 +29,9 @@ html
               td Mediana:
               td= AS.stats.med
                 |  ms
-
-      //- .locations Lokalizacje:
-      //-   ul
-      //-     each location in locations
-      //-       li= location.lat + ", " + location.lng
+            tr
+              td Odległość:
+              td(id=AS.resource)
 
       .prefixes
         h4.box Sieci:
@@ -75,6 +73,9 @@ html
                           td Mediana:
                           td= host.stats.med
                             |  ms
+                        tr
+                          td Odległość:
+                          td(id=host.host)
 
 script
   | var AS = {

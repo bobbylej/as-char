@@ -10,7 +10,7 @@ const nmap = require('node-nmap');
 const sys = require('util');
 const exec = require('child_process').exec;
 
-const maxPrefixes = 4;
+const maxPrefixes = 10;
 const maxHosts = 10;
 const maxPing = 10;
 const pingTime = 1500;
@@ -52,13 +52,12 @@ app.get('/result', function (req, res) {
       });
     });
 
-    if (prefixes.length > maxPrefixes) {
-      prefixes = getRandomElements(prefixes, maxPrefixes);
-    }
-    console.log('Networks: ', prefixes);
+    getPrefixesWithWorkingHosts(prefixes, maxPrefixes, resultPrefixes => {
+      prefixes = resultPrefixes;
+      console.log('Networks: ', prefixes);
 
-    getHostsFromPrefixes(prefixes, prefixesHosts => {
-      prefixes = prefixesHosts;
+    // getHostsFromPrefixes(prefixes, prefixesHosts => {
+    //   prefixes = prefixesHosts;
       let prefixesSize = prefixes.length;
       let hosts = new Array();
       prefixes.forEach(prefix => {
@@ -90,8 +89,56 @@ app.get('/result', function (req, res) {
         }
       });
     });
+    // });
   });
 });
+
+function getPrefixesWithWorkingHosts(prefixes, maxPrefixes, callback, goodPrefixes, badPrefixes) {
+  let finalPrefixes = new Array();
+  badPrefixes = badPrefixes || new Array();
+  if (goodPrefixes) {
+    finalPrefixes = goodPrefixes;
+  }
+  let prefixesToSearch = copyArray(prefixes);
+  finalPrefixes.forEach(prefix => {
+    let index = prefixesToSearch.indexOf(prefix.prefix);
+    if (index !== -1) {
+      prefixesToSearch.splice(index, 1);
+    }
+  });
+  badPrefixes.forEach(prefix => {
+    let index = prefixesToSearch.indexOf(prefix.prefix);
+    if (index !== -1) {
+      prefixesToSearch.splice(index, 1);
+    }
+  });
+  console.log('Searching for prefixes with alived hosts');
+  console.log('We have:', finalPrefixes.length);
+  console.log('Still to search:', prefixesToSearch.length);
+  console.log('Bad prefixes:', badPrefixes.length);
+  console.log('-----------------');
+  if (prefixesToSearch.length) {
+    let searchedPrefixes = getRandomElements(prefixesToSearch, maxPrefixes - finalPrefixes.length);
+    getHostsFromPrefixes(searchedPrefixes, prefixesHosts => {
+      searchedPrefixes = new Array();
+      for (let i = 0; i < prefixesHosts.length; i++) {
+        if (prefixesHosts[i].hosts && prefixesHosts[i].hosts.length) {
+          searchedPrefixes.push(prefixesHosts[i]);
+        } else {
+          badPrefixes.push(prefixesHosts[i]);
+        }
+      }
+      finalPrefixes = finalPrefixes.concat(searchedPrefixes);
+      if (finalPrefixes.length === maxPrefixes) {
+        callback(finalPrefixes);
+      } else {
+        getPrefixesWithWorkingHosts(prefixesToSearch, maxPrefixes, callback, finalPrefixes, badPrefixes);
+      }
+    });
+  } else {
+    callback(finalPrefixes);
+  }
+}
 
 function getHostsFromPrefixes(prefixes, callback) {
   let prefixesSize = prefixes.length;
@@ -154,7 +201,6 @@ function analyzeHost(prefix, host, callback) {
   let stackPing = maxPing;
   for (let i = 0; i < maxPing; i++) {
     setTimeout( () => {
-      console.log('ping', host)
       ping.promise.probe(host).then((res) => {
         if (res.time) {
           result.times.push(res.time);
@@ -234,7 +280,7 @@ function standardDeviation(values){
   let avgSquareDiff = average(squareDiffs);
 
   let stdDev = Math.sqrt(avgSquareDiff);
-  return stdDev;
+  return round2Decimal(stdDev);
 }
 
 function median(values) {
@@ -272,20 +318,23 @@ function getResourceInfo(resource, callback) {
   });
 }
 
-function getRandomElements(hosts, amount) {
-  let indexes = new Array();
-  for(let i = 0; i < amount; i++) {
-    let index = Math.floor(Math.random() * hosts.length);
-    while(indexes.indexOf(index) != -1) {
-      index = Math.floor(Math.random() * hosts.length);
+function getRandomElements(list, amount) {
+  if (list.length > amount) {
+    let indexes = new Array();
+    for(let i = 0; i < amount; i++) {
+      let index = Math.floor(Math.random() * list.length);
+      while(indexes.indexOf(index) != -1) {
+        index = Math.floor(Math.random() * list.length);
+      }
+      indexes.push(index);
     }
-    indexes.push(index);
+    let resultList = new Array();
+    indexes.forEach(index => {
+      resultList.push(list[index]);
+    })
+    return resultList;
   }
-  let resultHosts = new Array();
-  indexes.forEach(index => {
-    resultHosts.push(hosts[index]);
-  })
-  return resultHosts;
+  return list;
 }
 
 function prepereResult(AS, prefixes, hosts) {
@@ -452,6 +501,14 @@ function executeCommand(command, callback){
 
 function round2Decimal(num) {
   return Math.round(num * 100) / 100;
+}
+
+function copyArray(array) {
+  let newArray = new Array();
+  array.forEach(element => {
+    newArray.push(element);
+  });
+  return newArray;
 }
 
 app.listen(3456, function () {

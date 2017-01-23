@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.40 scan initiated Mon Jan 16 08:37:20 2017 as: nmap -sn -oX output/hosts_3 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 185.53.112.0/22 -->
-<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_3 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 185.53.112.0/22" start="1484552240" startstr="Mon Jan 16 08:37:20 2017" version="7.40" xmloutputversion="1.04">
+<!-- Nmap 7.40 scan initiated Thu Jan 26 22:15:38 2017 as: nmap -sn -oX output/hosts_3 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 194.247.192.0/19 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX output/hosts_3 -&#45;host-timeout 1 -&#45;max-rtt-timeout 1 -&#45;max-retries 2 194.247.192.0/19" start="1485465338" startstr="Thu Jan 26 22:15:38 2017" version="7.40" xmloutputversion="1.04">
 <verbose level="0"/>
 <debugging level="0"/>
-<host><status state="up" reason="conn-refused" reason_ttl="0"/>
-<address addr="185.53.112.1" addrtype="ipv4"/>
-<hostnames>
-<hostname name="dist-bg-1-v820.eunet.rs" type="PTR"/>
-</hostnames>
-<times srtt="78288" rttvar="78288" to="391440"/>
-</host>
-<runstats><finished time="1484552241" timestr="Mon Jan 16 08:37:21 2017" elapsed="1.21" summary="Nmap done at Mon Jan 16 08:37:21 2017; 1024 IP addresses (1 host up) scanned in 1.21 seconds" exit="success"/><hosts up="1" down="1023" total="1024"/>
+<runstats><finished time="1485465340" timestr="Thu Jan 26 22:15:40 2017" elapsed="2.13" summary="Nmap done at Thu Jan 26 22:15:40 2017; 8192 IP addresses (0 hosts up) scanned in 2.13 seconds" exit="success"/><hosts up="0" down="8192" total="8192"/>
 </runstats>
 </nmaprun>
